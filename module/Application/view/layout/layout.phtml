@@ -16,7 +16,7 @@
                 $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
                 ->prependStylesheet($this->basePath('css/style.css'))
                 ->prependStylesheet($this->basePath('css/bootstrap.css'))
-        //->prependStylesheet($this->basePath('css/bootstrap-theme.css'))
+            //->prependStylesheet($this->basePath('css/bootstrap-theme.css'))
         ?>
 
         <!-- Bootstrap core JavaScript
@@ -71,7 +71,7 @@
          */
         ?>
 
-        <nav class="navbar navbar-expand-md bg-primary navbar-dark mb-4 col-8 offset-2">
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark mb-4 col-10 offset-1">
             <a class="navbar-brand" href="<?= $this->url('home') ?>">O systému PayPal</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -79,32 +79,29 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= $this->url('home') ?>">  Jak systém funguje </a>
+                        <a class="nav-link active font-weight-bold" href="<?= $this->url('home') ?>">  Jak systém funguje </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= $this->url('home') ?>">  Jak založit účet </a>
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="<?= $this->url('home') ?>">  Jak založit účet </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= $this->url('home') ?>">  Integrace do webu </a>
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="<?= $this->url('home') ?>">  Integrace do webu </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= $this->url('home') ?>">  Poplatky za platby </a>
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold" href="<?= $this->url('home') ?>">  Poplatky za platby </a>
                     </li>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="hledat" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Hledat</button>
-                </form>
+
             </div>
         </nav>        
 
 
 
-        <div class="container">
+        <div class="container col-10">
             <?= $this->content ?>
             <hr>
             <footer>
-                <p>&copy; 2005 - <?= date('Y') ?> by Zend Technologies Ltd. All rights reserved.</p>
+                <p>&copy; 2018 - <?= date('Y') ?> Data & Computer Services s.r.o. zapsaná v obchodním rejstříku MS v Praze oddlíl C, Vložka 93746</p>
             </footer>
         </div>
         <?= $this->inlineScript() ?>
