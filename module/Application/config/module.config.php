@@ -45,6 +45,26 @@ return [
                     ],
                 ],
             ],
+            'integrace-do-webu' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route' => '/integrace-do-webu',
+                    'defaults' => [
+                        'controller' => Controller\IndexController::class,
+                        'action' => 'integraceDoWebu',
+                    ],
+                ],
+            ],
+            'poplatky-za-platby' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route' => '/poplatky-za-platby',
+                    'defaults' => [
+                        'controller' => Controller\IndexController::class,
+                        'action' => 'poplatkyZaPlatby',
+                    ],
+                ],
+            ],
             'application' => [
                 'type' => Segment::class,
                 'options' => [

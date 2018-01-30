@@ -24,4 +24,12 @@ class IndexController extends AbstractActionController {
     public function jakZalozitUcetAction() {
         return new ViewModel();
     }
+
+    public function integraceDoWebuAction() {
+        return new ViewModel();
+    }
+
+    public function poplatkyZaPlatbyAction() {
+        return new ViewModel();
+    }
 }
