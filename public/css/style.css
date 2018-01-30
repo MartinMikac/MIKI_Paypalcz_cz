@@ -31,3 +31,9 @@ div.container a.navbar-brand > img {
     margin-right: 4px;
     margin-top: -2px;
 }
+
+@media (min-width: 200px) {
+  .jumbotron {
+    padding: 1rem 0.5rem;
+  }
+}

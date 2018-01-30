@@ -14,8 +14,8 @@
         <!-- Le styles -->
         <?=
                 $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
-                ->prependStylesheet($this->basePath('css/style.css'))
                 ->prependStylesheet($this->basePath('css/bootstrap.css'))
+                ->prependStylesheet($this->basePath('css/style.css'))
             //->prependStylesheet($this->basePath('css/bootstrap-theme.css'))
         ?>
 
@@ -34,42 +34,21 @@
 
     </head>
     <body>
-        <?php
-        /*
-          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-          <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="<?= $this->url('home') ?>">
-          <img src="<?= $this->basePath('img/zf-logo-mark.svg') ?>" height="28" alt="Zend Framework <?= \Application\Module::VERSION ?>"/>&nbsp;Skeleton Application
-          </a>
-          </div>
-          <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-          <li class="active"><a href="<?= $this->url('home') ?>">Home</a></li>
-          </ul>
-          </div>
-          </div>
-          </nav>
-
-         */
-
-
-        /*
-         * 
-         * 
-          O systému PayPal
-          Jak systém funguje
-          Jak založit účet
-          Integrace do webu
-          Poplatky za platby
-         * 
-         */
-        ?>
+        <div class="jumbotron offset-1 col-10">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="<?= $this->basePath('img/pay_pal_ams_v1.png') ?>" alt="PayPal.com Logo "/>        
+                </div>
+                <div class="col-md-6 pt-5">
+                    <strong class="text-left mt-5">
+                        Váš server pro podporu intergrace PayPal do webových stránek
+                    </strong>
+                </div>
+            
+            </div>
+            
+        </div>
+        
 
         <nav class="navbar navbar-expand-md bg-primary navbar-dark mb-4 col-10 offset-1">
             <a class="navbar-brand" href="<?= $this->url('home') ?>">O systému PayPal</a>
